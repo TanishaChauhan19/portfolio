@@ -8,6 +8,7 @@ body{
 .about-container{
     display: flex;
     justify-content: space-between;
+    flex-direction: row-reverse;
     text-align: center;
     width: 100%;
     padding-top:40px;
