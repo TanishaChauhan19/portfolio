@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/LOGO.jpg" type="image/jpg">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" href="{% static 'img/site-pic.ico' %}" type="image/icon">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body oncontextmenu="return false;"></body>
+    <script src="navbar.js" defer></script>
+    <nav id="nav-bar"></nav>
+    <div class="main">
+    <section class="contact-section">
+        <span class="contact-info">
+            <h1>contact </h1>
+            <p>Get in touch via social media or email</p>
+            <div class="links">
+            <ul>
+                <li><a href="https://github.com/Tafdas9" target="_blank" class="social"><i class="bi bi-github"></i>Github</a></li>
+                <li><a href="https://www.linkedin.com/in/tanhan-0dsfa72b7/" target="_blank" class="social"><i class="bi bi-linkedin"></i>Linkedin</a></li>
+                <li><a href="" target="_blank"></a></li>
+            </ul>
+        </div>
+        </span>
+        <span class="profile-img" >
+            <img src="image/profile.png" alt="profile-img" class="image">
+        </span>
+    </section>
+    <form action="https://formspree.io/f/xvgkvgbw" method="POST" class="form-container">
+        <!-- Honeypot -->
+        <input type="text" name="_gotcha" style="display:none">
+        <div class="left-side">
+            <h1>Send me an e-mail</h1>
+    
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+    
+        <div class="right-side">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+    
+            <div class="right-btn">
+                <button type="submit" class="send-btn">Send email</button>
+            </div>  
+        </div>
+    </form>
+    
+    <footer class="end" style="text-align: center;">
+        <p>&copy;Tanisha Chauhan 2025.</p>
+        <script src="scrollup.js" defer></script>
+        <div id="moveup"></div>
+    </div>
+
+</body>
+</html>

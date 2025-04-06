@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/LOGO.jpg" type="image/jpg">
+    <title>Wins & Certifications</title>
+    <style>
+        body{
+            background-color: #f9f7f4;
+        }
+        .intro{
+            display:flex;
+            justify-content: center;
+            align-items:center;
+            margin:5%;
+            padding-bottom: 2%;
+            border-bottom:2px solid grey;
+            box-shadow: 2px 2px 3px grey;
+        }
+        .description{
+            width: 80%;
+            padding:2%;
+            
+        }
+        .description h1{
+            text-align: left;
+            font-size: 4rem;   
+            padding-bottom: 4%;
+        }
+        .description p{
+           text-align: left;
+           justify-content: space-between;
+           padding-bottom: 3%;
+           font-size: 20px;
+        }
+        .images{
+            width: 80%;
+            padding:2%;
+            min-width: 300px;
+        }
+        .images img{
+            width: 80%;
+        }
+        .container{
+            padding-top: 6%;
+            padding-bottom: 10%;
+            margin:3%;
+            display: grid;
+            justify-items: center;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .container img{
+            width:90%;
+            border:1px solid rgb(84, 117, 136); 
+            margin:3%;
+            border-radius: 25px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            padding:8px;
+        }
+        .container img:hover{
+            box-shadow: 4px 4px 5px grey;
+            transform: scale(1.03);
+            cursor: pointer;
+        }
+        footer{
+            margin:5%;
+            border-top:2px solid grey;
+            padding:10%;
+        }
+        .wins{
+            margin-top: 50px;
+            display: block;
+            padding: 30px;
+            border-top: 2px solid #ccc;
+            background: linear-gradient(to bottom right, #f9f9f9, #ffffff);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }            
+            .win-desc{
+            display: flex;
+            flex: 1;
+            padding: 20px 40px;
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            }
+
+            .win-desc:hover {
+            transform: translateY(-5px);
+            }
+            .win-desc .cont1{
+                width:60%;
+            }
+            .win-desc .cont2{
+                width:100%;
+            }
+            .win-desc h1{
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            color: #2c3e50;
+            }
+
+            .win-desc p{
+            text-align: justify;
+            font-size: 1.1em;
+            color: #555;
+            line-height: 1.6em;
+            }
+            .win-img{
+            width: 25%;
+            min-width: 250px;
+            border-radius: 20px;
+            margin:2%;
+            border: 1px solid #ddd;
+            }
+
+            .win-img img:hover{
+            box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.2);
+            transform: scale(1.03);
+            cursor: pointer;
+            }
+        /*responsive code*/
+        @media (max-width:900px){
+            .container{
+                display:grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .intro{
+                display: block;
+                
+            }
+            .description{
+                width: 100%;
+            }
+            .description h1{
+                text-align: center;
+                font-size: 3rem;
+            }
+            .images{
+                 width:100%;
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+            }
+            .images img{
+                width:80%;
+                justify-items: center;
+            }
+            .win-desc{
+            display: block;
+            }
+            .cont1 img{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+        }
+        @media (max-width:525px){
+            .container{
+                display:grid;
+                grid-template-columns: repeat(1, 1fr);
+                border-top: 2px solid grey;
+            }
+            .intro{
+                box-shadow: none;
+                border: none;
+            }
+        }
+    </style>
+</head>
+<body oncontextmenu="return false;"></body>
+    <script src="navbar.js" defer></script>
+    <nav id="nav-bar"></nav>
+     <section class="intro">
+        <div class="description">
+            <h1>Wins & Certifications</h1>
+            <p>A collection of proud moments, certifications, and milestones that mark my personal and professional journey.</p>
+        </div>
+        <div class="images">
+            <img src="image/growth.jpg" alt="porject1 image">
+        </div>
+     </section>
+     <div class="wins">
+        <div class="win-desc" style="background-color: #f9f7f4;">
+            <div class="cont1">
+            <img class="win-img" src="image/win1.jpg" alt="google girl hackethon swags" onclick="goToPage('https://searchimageshere.netlify.app/')">
+        </div>
+        <div class="cont2">
+        <h1>Google Girl Hackathon 2025 Semifinalist</h1>
+            <p>I cleared the Google coding challenge and got the amazing opportunity to present my idea in the semifinals. My project focused on how AI can help detect diseases like glaucoma — especially in the early stages when symptoms aren’t obvious. I used image processing to analyze eye scans, aiming to make early diagnosis more accessible and accurate.</p>
+          </div>
+        </div>
+     </div>
+     <div class="container">
+         <img src="image/cert1.jpg" alt="image search engine project" onclick="gotoPage('https://www.coursera.org/account/accomplishments/verify/L0E49MTSPWNI')">
+         <img src="image/cert2.jpg" alt="weather app" onclick="gotoPage('https://nptel.ac.in/noc/E_Certificate/NPTEL23CS74S83420113920136626')">
+     </div>
+     <script src="scrollup.js" defer></script>
+     <div id="moveup"></div>
+    <footer class="end" style="text-align: center;">
+        <p>&copy;Tanisha Chauhan 2025.</p>
+        </footer>
+        <script>
+            function gotoPage(url)
+            {
+                window.open(url,'_blank');
+            }
+        </script>
+</body>
+</html>

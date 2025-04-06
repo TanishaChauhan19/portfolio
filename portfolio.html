@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/LOGO.jpg" type="image/jpg">
+    <title>Portfolio</title>
+    <style>
+        body{
+            background-color: #f9f7f4;
+        }
+        .intro{
+            display:flex;
+            justify-content: center;
+            align-items:center;
+            margin:5%;
+            padding-bottom: 2%;
+            border-bottom:2px solid grey;
+            box-shadow: 2px 2px 3px grey;
+        }
+        .description{
+            width: 80%;
+            padding:2%;
+            
+        }
+        .description h1{
+            text-align: left;
+            font-size: 6rem;   
+            padding-bottom: 4%;
+        }
+        .description p{
+           text-align: left;
+           justify-content: space-between;
+           padding-bottom: 3%;
+           font-size: 20px;
+        }
+        .images{
+            width: 100%;
+            padding:2%;
+            min-width: 300px;
+        }
+        .images img{
+            width: 100%;
+        }
+        .container{
+            padding-top: 6%;
+            padding-bottom: 10%;
+            margin:3%;
+            display: grid;
+            justify-items: center;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .container img{
+            width:90%;
+            border:1px solid rgb(84, 117, 136); 
+            margin:3%;
+            border-radius: 25px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            padding:8px;
+        }
+        .container img:hover{
+            box-shadow: 4px 4px 5px grey;
+            transform: scale(1.03);
+            cursor: pointer;
+        }
+        footer{
+            margin:5%;
+            border-top:2px solid grey;
+            padding:10%;
+        }
+        /*responsive code*/
+        @media (max-width:900px){
+            .container{
+                display:grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .intro{
+                display: block;
+                
+            }
+            .description{
+                width: 100%;
+            }
+            .description h1{
+                text-align: center;
+                font-size: 3rem;
+            }
+            .images{
+                 width:100%;
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+            }
+            .images img{
+                width:80%;
+                justify-items: center;
+            }
+            
+        }
+        @media (max-width:525px){
+            .container{
+                display:grid;
+                grid-template-columns: repeat(1, 1fr);
+                border-top: 2px solid grey;
+            }
+            .intro{
+                box-shadow: none;
+                border: none;
+            }
+        }
+    </style>
+</head>
+<body oncontextmenu="return false;"></body>
+    <script src="navbar.js" defer></script>
+    <nav id="nav-bar"></nav>
+     <section class="intro">
+        <div class="description">
+            <h1>portfolio</h1>
+            <p>Checkout some of my latest projects.</p>
+            <p>I have worked on diverse projects, spanning from frontend web development to machine learning applications.</p>
+        </div>
+        <div class="images">
+            <img src="image/port1.jpg" alt="porject1 image">
+        </div>
+     </section>
+     <div class="container">
+         <img src="image/1.jpg" alt="image search engine project" onclick="gotoPage('https://github.com/TanishaChauhan19/Search-Images')">
+         <img src="image/2.jpg" alt="weather app" onclick="gotoPage('https://github.com/TanishaChauhan19/-Rain-Weather-Predictor')">
+         <img src="image/3.jpg" alt="diagnosis app" onclick="gotoPage('https://github.com/TanishaChauhan19/Diagnostic-tool')">
+         <img src="image/4.jpg" alt="portfolio project" onclick="gotoPage('https://github.com/TanishaChauhan19/portfolio')">
+         <img src="image/5.jpg" alt="Sentimental Analysis">
+     </div>
+     <script src="scrollup.js" defer></script>
+     <div id="moveup"></div>
+    <footer class="end" style="text-align: center;">
+        <p>&copy;Tanisha Chauhan 2025.</p>
+        </footer>
+        <script>
+            function gotoPage(url)
+            {
+                window.open(url,'_blank');
+            }
+        </script>
+</body>
+</html>

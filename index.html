@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/LOGO.jpg" type="image/jpg">
+    <title>about</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body oncontextmenu="return false;">
+    <script src="navbar.js" defer></script>
+    <nav id="nav-bar"></nav>
+    <section class="about-container">
+        <div class="about">
+            <h1>about</h1>
+          <p class="bio">Third-year college student with a passion for frontend development. 
+            Turning ideas into seamless, interactive experiences!</p> 
+        <p class="other">
+            Passionate about technology, innovation, and building impactful solutions. 
+            Always exploring, learning, and creating.
+          When I’m not coding, you’ll find me reading books, 
+            exploring nature, and enjoying good food! </p>
+        </div>
+        <div class="profile-img">
+            <img src="image/profile.png" alt="profile" class="image">
+        </div>
+    </section>
+    <div class="catalog">
+        <span class="c1">
+        <img src="image/books.jpg" alt="books">
+        <img src="image/food.jpg" alt="food">
+        <img src="image/nature1.jpg" alt="river">
+        </span>
+        <span class="c2">
+        <img src="image/coding.jpg" alt="programming">
+        <img src="image/nature2.jpg" alt="mountains">
+        <img src="image/spritual.jpg" alt="mountains">
+    </span>
+    </div>
+    <div class="skills-container">
+        <div class="skills" style="background-color: #f9f7f4;">
+        <div class="skills-section-left" >
+            <h2>Web Development & Tools </h2>
+            <ul>
+                <li>HTML/ CSS</li>
+                <li>JavaScript</li>
+                <li>ReactJS</li>
+                <li>Bootstrap</li>
+            </ul>
+        </div>
+        <div class="skills-section-right">
+            <h2>Programming & Databases</h2>
+            <ul>
+                <li>C/C++</li>
+                <li>Java</li>
+                <li>SQL</li>
+                <li>MySQL</li>
+                <li>Oracle</li>
+            </ul>
+        </div>
+    </div>
+    <img src="image/s-chart.png" alt="Skills Chart" class="s-chart">
+</div>
+<div class="projects" style="background-color: #f9f7f4;">
+    <h1>✨ Hey! Check Out My Projects ✨</h1>
+  
+    <div class="project1">
+      <div class="pr-about1" style="background-color: #f9f7f4;">
+        <h3>An Image Search Engine<img src="image/picture.png" alt="photo" class="icon-img"></h3>
+        <p>A fast and responsive Image Search Engine that allows users to find high-quality images by querying the Unsplash API. Users can search for images based on keywords and view results instantly.</p>
+      </div>
+      <div class="pr-img1">
+        <img src="image/imgsearch.jpg" alt="image search engine image" onclick="goToPage('https://searchimageshere.netlify.app/')">
+      </div>
+    </div>
+  
+    <div class="project2">
+      <div class="pr-about2" style="background-color: #f9f7f4;">
+        <h3>Weather Web App <img src="image/cloudy.png" alt="cloud and sun" class="icon-img"> </h3>
+        <p>A simple yet functional Weather App that provides real-time weather updates for any location using the OpenWeather API. Users can enter a city name to fetch temperature, weather conditions, and more.</p>
+      </div>
+      <div class="pr-img2">
+        <img src="image/weatherApp image.jpg" alt="weather app images" onclick="goToPage('https://github.com/TanishaChauhan19/-Rain-Weather-Predictor')"> 
+      </div>
+    </div>
+  
+    <div class="project1">
+      <div class="pr-about1" style="background-color: #f9f7f4;">
+        <h3>EasyDiagnosis <img src="image/medical.png" alt="stethoscope" class="icon-img"></h3>
+        <p>Developed a multi-disease diagnostic tool using Streamlit, hosted on Streamlit Cloud. This tool leverages machine learning algorithms for early disease detection, providing accurate and accessible healthcare insights.</p>
+      </div>
+      <div class="pr-img2">
+        <img src="image/easyDiagnosis.jpg" alt="multi disease diagnosis app image" onclick="goToPage('https://easydiagnosis.streamlit.app/')">
+      </div>
+    </div>
+  </div>
+<footer class="end" style="text-align: center;">
+    <p>&copy;Tanisha Chauhan 2025.</p>
+    <script src="scrollup.js" defer></script>
+    <div id="moveup"></div>
+</footer>
+<script>
+    function goToPage(url){
+    window.open(url, '_blank');
+}
+</script>
+</body>
+</html>
