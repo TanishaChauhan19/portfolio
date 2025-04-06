@@ -15,10 +15,9 @@ body{
 }
 .about{
     display: block;
-    justify-content: left;
-    text-align: left;
+    justify-content: center;
+    text-align: center;
     width: 100%;
-    padding-left: 40px;
 }
 .about h1{
     text-align: center;
@@ -223,6 +222,7 @@ footer{
     }
     .about h1 {
         font-size: 4rem;
+        text-align: center;
     }
     .bio, .other {
         font-size: 30px;
@@ -237,7 +237,7 @@ footer{
     }
     .image {
         justify-items:center ;
-        max-width: 80%;
+        max-width: 100%;
     }
     .skills {
         flex-direction: column; /* Stack elements vertically */
