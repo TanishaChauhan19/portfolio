@@ -1,7 +1,0 @@
-.contact-section{
-    display: flex;
-    justify-content: space-between; /* Space between both sections */
-    align-items: center;
-    height: 100vh; /* Full screen height */
-    padding: 50px;
-}
