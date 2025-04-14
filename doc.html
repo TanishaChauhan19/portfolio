@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-Diagnosis tool</title>
+    <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+    <a href="portfolio.html#projects" class="back-btn">← Back to Projects</a>
+    <h1 class="heading">EasyDiagnosis</h1>
+    <div class="intro"> 
+    <div class="about">
+    <p>Developed a multi-disease diagnostic tool using Streamlit, hosted on Streamlit Cloud. This tool leverages 
+        machine learning algorithms for early disease detection, providing accurate and 
+        accessible healthcare insights.</p>
+        <div class="ref">
+            <ul>
+                <li><a href="https://github.com/TanishaChauhan19/Diagnostic-tool.git" class="links" target="_blank">Github Repo</a></li>
+                <li>
+                    <a href="https://easydiagnosis.streamlit.app/" class="links" target="_blank">Live Demo</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+        <div class="images">
+            <img src="image/easyDiagnosis.jpg" alt="image search engine">
+        </div>
+</div>
+    
+<div class="desc">
+    <h1>Project Breakdown</h1>
+
+    <h2>1. Heart Disease Prediction</h2>
+    <p>The heart disease detection uses a <strong>Logistic Regression model</strong>. It was trained and tested on medical dataset features like cholesterol, blood pressure, chest pain type, etc.</p>
+    <ul>
+        <li>Training Accuracy: 84.71%</li>
+        <li>Testing Accuracy: 80.33%</li>
+        <li>Precision: 81.26%</li>
+        <li>Recall: 80.33%</li>
+        <li>F1 Score: 79.97%</li>
+        <li>Confusion Matrix:
+            <ul>
+                <li>True Positives: 30</li>
+                <li>True Negatives: 19</li>
+                <li>False Positives: 9</li>
+                <li>False Negatives: 3</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>2. Pneumonia Detection</h2>
+    <p>This model uses a <strong>Transfer Learning</strong> approach with the pretrained <strong>MobileNetV2</strong> model:</p>
+    <ul>
+        <li>The base model is frozen and a custom classification head is added.</li>
+        <li>Includes layers like GlobalAveragePooling2D, Dense (128), Dropout, and a final Sigmoid activation for binary classification.</li>
+        <li>Compiled with <strong>Adam optimizer</strong> and <strong>binary crossentropy</strong> loss.</li>
+        <li>Test Accuracy: 88.94%</li>
+    </ul>
+
+    <h2>3. Diabetes Detection</h2>
+    <p>For diabetes prediction, a <strong>Support Vector Machine (SVM)</strong> classifier is used:</p>
+    <ul>
+        <li>Trained on features like glucose level, BMI, insulin, and more.</li>
+        <li>Training Accuracy: 78.66%</li>
+        <li>Testing Accuracy: 77.27%</li>
+    </ul>
+
+    <h2>4. User Interface</h2>
+    <p>The app has been developed using <strong>Streamlit</strong> and is styled for clarity and ease of use. Users select the disease they wish to diagnose, enter relevant parameters, and receive real-time predictions.</p>
+
+    <h2>5. Deployment</h2>
+    <p>The app is hosted on <strong>Streamlit Cloud</strong>. Note that the app might go to sleep during inactivity and can be reactivated upon visit.</p>
+</div>
+    <a href="portfolio.html#projects" class="back-btn">← Back to Projects</a>
+    <footer class="end" style="text-align: center;">
+        <p>&copy;Tanisha Chauhan 2025.</p>
+        <script src="scrollup.js" defer></script>
+        <div id="moveup"></div>
+    </footer>
+</body>
+</html>
