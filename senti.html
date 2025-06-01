@@ -11,9 +11,7 @@
     <h1 class="heading">Sentiment Analyzer</h1>
     <div class="intro">
         <div class="about">
-            <p >Developed an advanced sentiment analysis tool using Python and Natural Language Processing (NLP) techniques. 
-                This tool can analyze emotions in text and tweets, providing accurate sentiment predictions and emotion 
-                classification for better understanding of textual content.</p>
+            <p>Developed a full-stack Sentiment Analysis Platform with a modern React frontend and a Python backend. The backend leverages the <code>SamLowe/roberta-base-go_emotions</code> model for robust emotion and sentiment prediction, and uses Tweepy to fetch and analyze tweets in real time via the Twitter API. The platform allows users to analyze emotions and sentiments in both plain text and tweets, providing detailed breakdowns and real-time insights.<br></p>
             <div class="ref" >
                 <ul >
                     <li><a href="https://github.com/TanishaChauhan19/SentimentAnalyzer" class="links" target="_blank">Github Repo</a></li>
@@ -29,61 +27,30 @@
     </div>
     <div class="desc">
         <h1>Project Breakdown</h1>
-        <h2>1. Text Preprocessing Pipeline</h2>
-        <p>The sentiment analysis system implements a comprehensive text preprocessing pipeline:</p>
+        <h2>1. Technology Stack</h2>
         <ul>
-            <li>Text cleaning and normalization</li>
-            <li>Tokenization using NLTK</li>
-            <li>Stop word removal</li>
-            <li>Lemmatization for word normalization</li>
-            <li>Special handling for emojis and emoticons</li>
+            <li><strong>Frontend:</strong> React.js (modern, responsive UI)</li>
+            <li><strong>Backend:</strong> Python (FastAPI/Flask)</li>
+            <li><strong>Model:</strong> SamLowe/roberta-base-go_emotions (for emotion & sentiment prediction)</li>
+            <li><strong>Twitter Integration:</strong> Tweepy for fetching and analyzing tweets via Twitter API</li>
         </ul>
-        <h2>2. Model Architecture</h2>
-        <p>The system uses a <strong>BERT-based model</strong> fine-tuned for sentiment analysis:</p>
+        <h2>2. Features</h2>
         <ul>
-            <li>Base model: BERT (Bidirectional Encoder Representations from Transformers)</li>
-            <li>Fine-tuned on sentiment analysis datasets</li>
-            <li>Custom classification head for emotion detection</li>
-            <li>Model Performance:
-                <ul>
-                    <li>Accuracy: 89.5%</li>
-                    <li>F1 Score: 0.88</li>
-                    <li>Precision: 0.87</li>
-                    <li>Recall: 0.89</li>
-                </ul>
-            </li>
+            <li>Analyze emotions and sentiments in plain text</li>
+            <li>Analyze tweet sentiment in real time</li>
+            <li>Detailed emotion and sentiment breakdown for both text and tweets</li>
+            <li>Modern, user-friendly interface</li>
         </ul>
-        <h2>3. Emotion Classification</h2>
-        <p>The system can classify text into multiple emotion categories:</p>
+        <h2>3. How it Works</h2>
         <ul>
-            <li>Primary emotions: Happy, Sad, Angry, Neutral</li>
-            <li>Secondary emotions: Excited, Anxious, Frustrated, Calm</li>
-            <li>Confidence scores for each emotion</li>
-            <li>Multi-label classification support</li>
+            <li>User selects either Text Analysis or Twitter Analysis from the homepage</li>
+            <li>For Text Analysis: User enters text, which is sent to the backend for prediction</li>
+            <li>For Twitter Analysis: User provides a keyword/hashtag, tweets are fetched and analyzed for sentiment/emotion</li>
+            <li>Results are displayed with clear breakdowns and visual cues</li>
         </ul>
-        <h2>4. Tweet Analysis Features</h2>
-        <p>Special features for Twitter data analysis:</p>
+        <h2>4. Deployment</h2>
         <ul>
-            <li>Hashtag sentiment analysis</li>
-            <li>User mention handling</li>
-            <li>URL detection and processing</li>
-            <li>Trend analysis capabilities</li>
-        </ul>
-        <h2>5. User Interface</h2>
-        <p>The application features a clean and intuitive interface built with <strong>Streamlit</strong>:</p>
-        <ul>
-            <li>Real-time sentiment analysis</li>
-            <li>Batch processing for multiple texts</li>
-            <li>Visualization of sentiment scores</li>
-            <li>Export functionality for analysis results</li>
-        </ul>
-        <h2>6. Deployment</h2>
-        <p>The application is deployed on <strong>Streamlit Cloud</strong> with the following features:</p>
-        <ul>
-            <li>RESTful API endpoints for integration</li>
-            <li>Scalable cloud infrastructure</li>
-            <li>Real-time processing capabilities</li>
-            <li>Automatic scaling based on demand</li>
+            <li><em>App is currently not deployed</em></li>
         </ul>
     </div>
     <a href="portfolio.html#projects" class="back-btn">← Back to Projects</a>
