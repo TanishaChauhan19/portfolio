@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-Sentiment Analyzer</title>
+    <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+    <a href="portfolio.html#projects" class="back-btn">← Back to Projects</a>
+    <h1 class="heading">Sentiment Analyzer</h1>
+    <div class="intro">
+        <div class="about">
+            <p >Developed an advanced sentiment analysis tool using Python and Natural Language Processing (NLP) techniques. 
+                This tool can analyze emotions in text and tweets, providing accurate sentiment predictions and emotion 
+                classification for better understanding of textual content.</p>
+            <div class="ref" >
+                <ul >
+                    <li><a href="https://github.com/TanishaChauhan19/SentimentAnalyzer" class="links" target="_blank">Github Repo</a></li>
+                    <li>
+                        <a href="https://your-sentiment-analyzer-demo.com" class="links" target="_blank">Live Demo</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="video-wrapper" >
+            <iframe width="480" height="270" src="https://www.youtube.com/embed/z_5PNqLnA2M" title="sentiproject" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="display:block;"></iframe>
+        </div>
+    </div>
+    <div class="desc">
+        <h1>Project Breakdown</h1>
+        <h2>1. Text Preprocessing Pipeline</h2>
+        <p>The sentiment analysis system implements a comprehensive text preprocessing pipeline:</p>
+        <ul>
+            <li>Text cleaning and normalization</li>
+            <li>Tokenization using NLTK</li>
+            <li>Stop word removal</li>
+            <li>Lemmatization for word normalization</li>
+            <li>Special handling for emojis and emoticons</li>
+        </ul>
+        <h2>2. Model Architecture</h2>
+        <p>The system uses a <strong>BERT-based model</strong> fine-tuned for sentiment analysis:</p>
+        <ul>
+            <li>Base model: BERT (Bidirectional Encoder Representations from Transformers)</li>
+            <li>Fine-tuned on sentiment analysis datasets</li>
+            <li>Custom classification head for emotion detection</li>
+            <li>Model Performance:
+                <ul>
+                    <li>Accuracy: 89.5%</li>
+                    <li>F1 Score: 0.88</li>
+                    <li>Precision: 0.87</li>
+                    <li>Recall: 0.89</li>
+                </ul>
+            </li>
+        </ul>
+        <h2>3. Emotion Classification</h2>
+        <p>The system can classify text into multiple emotion categories:</p>
+        <ul>
+            <li>Primary emotions: Happy, Sad, Angry, Neutral</li>
+            <li>Secondary emotions: Excited, Anxious, Frustrated, Calm</li>
+            <li>Confidence scores for each emotion</li>
+            <li>Multi-label classification support</li>
+        </ul>
+        <h2>4. Tweet Analysis Features</h2>
+        <p>Special features for Twitter data analysis:</p>
+        <ul>
+            <li>Hashtag sentiment analysis</li>
+            <li>User mention handling</li>
+            <li>URL detection and processing</li>
+            <li>Trend analysis capabilities</li>
+        </ul>
+        <h2>5. User Interface</h2>
+        <p>The application features a clean and intuitive interface built with <strong>Streamlit</strong>:</p>
+        <ul>
+            <li>Real-time sentiment analysis</li>
+            <li>Batch processing for multiple texts</li>
+            <li>Visualization of sentiment scores</li>
+            <li>Export functionality for analysis results</li>
+        </ul>
+        <h2>6. Deployment</h2>
+        <p>The application is deployed on <strong>Streamlit Cloud</strong> with the following features:</p>
+        <ul>
+            <li>RESTful API endpoints for integration</li>
+            <li>Scalable cloud infrastructure</li>
+            <li>Real-time processing capabilities</li>
+            <li>Automatic scaling based on demand</li>
+        </ul>
+    </div>
+    <a href="portfolio.html#projects" class="back-btn">← Back to Projects</a>
+    <footer class="end" style="text-align: center;">
+        <p>&copy;Tanisha Chauhan 2025.</p>
+        <script src="scrollup.js" defer></script>
+        <div id="moveup"></div>
+    </footer>
+</body>
+</html>
