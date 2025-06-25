@@ -72,6 +72,35 @@
             width: 100%;
             color: white;
         }
+        .sidebar-socials {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+            width: 100%;
+            position: absolute;
+            bottom: 32px;
+            left: 0;
+            padding: 12px 0;
+            background: transparent;
+        }
+        .sidebar-social-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            font-size: 28px;
+            color: #fff;
+            background: #222;
+            transition: background 0.2s, color 0.2s, transform 0.2s;
+        }
+        .sidebar-social-icon:hover {
+            background: #ffd700;
+            color: #222;
+            transform: scale(1.15);
+        }
         .social-icon a{
             font-size: 24px;
             transition: transform 0.3s ease, color 0.3s ease;
@@ -110,10 +139,8 @@
         <li ><a href="portfolio.html">portfolio</a></li>
         <li><a href="achievements.html">Milestones</a></li>
         <li><a href="contact.html">contact</a></li>
-        <li style="margin-left:20px;" class="social-icon"><a href="https://www.youtube.com/@Coder-k4w/playlists" target="_blank"><i class="bi bi-youtube"></i></a></li>
-        <li class="social-icon"><a href="https://github.com/TanishaChauhan19" target="_blank"><i class="bi bi-github"></i></a></li>
-        <li class="social-icon"><a href="https://www.linkedin.com/in/tanisha-chauhan-082a272b7/" target="_blank"><i class="bi bi-linkedin"></i></a></li>
-    </ul>
+        <li style="display: flex; gap: 10px; "><a href="https://www.youtube.com/@Coder-k4w/playlists" target="_blank"><i class="bi bi-youtube"></i></a> <a href="https://github.com/TanishaChauhan19" target="_blank"><i class="bi bi-github"></i></a> <a href="https://www.linkedin.com/in/tanisha-chauhan-082a272b7/" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+        </ul>
     <ul>
         <li><a href="#"><img src="image/LOGO.jpg" alt="logo" style="min-width: 40px;"></a></li>
         <li class="hideonmobile"><a href="index.html">about</a></li>

@@ -126,6 +126,8 @@ body{
     animation: cardFadeIn 0.7s forwards;
     border: 1.5px solid #e0e7ff;
     margin-bottom: 0;
+    word-break: break-word;
+    overflow: hidden;
 }
 .skill-card:hover, .skill-card.active {
     transform: scale(1.07) rotateY(4deg);
@@ -136,17 +138,10 @@ body{
 .skill-card .progress-ring {
     margin: 18px 0 10px 0;
 }
-.skill-card .skill-label {
-    font-size: 1.18rem;
-    font-weight: 600;
-    margin-bottom: 2px;
-    color: #222;
+.skill-card .skill-label, .skill-card .skill-level {
+    word-break: break-word;
     text-align: center;
-}
-.skill-card .skill-level {
-    font-size: 0.98rem;
-    color: #888;
-    margin-bottom: 8px;
+    width: 100%;
 }
 .skill-card .project-list {
     display: none;
@@ -161,9 +156,17 @@ body{
     background: #f6f8ff;
     box-shadow: 0 2px 8px rgba(80,80,160,0.06);
     animation: fadeInProject 0.3s;
+    word-break: break-word;
+    padding-bottom: 6px;
 }
 .skill-card:hover .project-list, .skill-card.active .project-list {
     display: block;
+}
+.skill-card .project-list li {
+    word-break: break-word;
+    font-size: 0.97rem;
+    line-height: 1.3;
+    margin-bottom: 2px;
 }
 @keyframes cardFadeIn {
     from { opacity: 0; transform: translateY(40px) scale(0.95); }
@@ -196,26 +199,97 @@ body{
 }
 @media (max-width: 900px) {
     .skills-cards {
-        gap: 24px 12px;
+        gap: 18px 6px;
     }
     .skill-card {
-        width: 140px;
-        min-height: 160px;
+        width: 120px;
+        min-height: 120px;
+        font-size: 0.85rem;
+        padding: 4px 2px;
+    }
+    .skill-card .skill-label {
         font-size: 0.95rem;
+    }
+    .skill-card .skill-level {
+        font-size: 0.85rem;
+    }
+    .project-list {
+        font-size: 0.85rem;
+        padding: 0 2px 6px 2px;
+    }
+    .project-list li {
+        font-size: 0.85rem;
     }
 }
 @media (max-width: 600px) {
     .skills-container {
-        padding: 18px 0 30px 0;
-        border-radius: 18px;
+        padding: 10px 0 18px 0;
+        border-radius: 12px;
     }
     .skills-cards {
-        gap: 12px 6px;
+        gap: 8px 2px;
     }
     .skill-card {
-        width: 110px;
-        min-height: 110px;
+        width: 98vw;
+        min-width: 0;
+        max-width: 99vw;
+        min-height: 90px;
+        font-size: 0.80rem;
+        padding: 2px 2px;
+        margin: 0 auto 8px auto;
+    }
+    .skill-card .skill-label {
         font-size: 0.85rem;
+    }
+    .skill-card .skill-level {
+        font-size: 0.75rem;
+    }
+    .project-list {
+        font-size: 0.75rem;
+        padding: 0 2px 4px 2px;
+    }
+    .project-list li {
+        font-size: 0.75rem;
+    }
+    .skill-graph {
+        width: 98vw;
+        height: 220px;
+        min-width: 0;
+    }
+    .skill-node {
+        width: 48px;
+        height: 48px;
+        font-size: 0.70rem;
+        padding: 2px;
+        min-width: 0;
+        max-width: 60px;
+        word-break: break-word;
+        white-space: normal;
+        text-align: center;
+        line-height: 1.1;
+    }
+    .skill-node span {
+        font-size: 0.70rem;
+        word-break: break-word;
+        white-space: normal;
+        text-align: center;
+        display: block;
+    }
+}
+@media (max-width: 400px) {
+    .skill-graph {
+        width: 99vw;
+        height: 140px;
+    }
+    .skill-node {
+        width: 32px;
+        height: 32px;
+        font-size: 0.60rem;
+        padding: 1px;
+        max-width: 40px;
+    }
+    .skill-node span {
+        font-size: 0.60rem;
     }
 }
 h2 {
@@ -467,11 +541,11 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 100vw;
+  min-width: 0;
 }
 .skill-node {
   position: absolute;
-  width: 100px;
-  height: 100px;
   background: #fff;
   border-radius: 50%;
   box-shadow: 0 2px 8px rgba(0,0,0,0.10);
@@ -482,13 +556,21 @@ footer{
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
   border: 3px solid transparent;
-  font-size: 0.85rem;
   text-align: center;
   z-index: 1;
-  padding: 5px;
+  padding: 2px;
   box-sizing: border-box;
   opacity: 0;
   transform: scale(0.5);
+  word-break: break-word;
+  white-space: normal;
+}
+.skill-node span {
+  display: block;
+  width: 100%;
+  word-break: break-word;
+  white-space: normal;
+  text-align: center;
 }
 .skill-graph.in-view .skill-node {
   animation: fadeInScale 0.5s ease-out forwards;
