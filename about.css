@@ -666,3 +666,30 @@ footer{
   filter: drop-shadow(0 2px 8px #22222222);
 }
 
+.cta-portfolio {
+  text-align: center;
+  margin: 48px 0 0 0;
+}
+.portfolio-btn {
+  display: inline-block;
+  background: linear-gradient(90deg, #222 0%, #444 100%);
+  color: #fff;
+  font-size: 1.35rem;
+  font-weight: 800;
+  padding: 20px 48px;
+  border-radius: 32px;
+  text-decoration: none;
+  box-shadow: 0 6px 24px rgba(34,34,34,0.18);
+  letter-spacing: 1.2px;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+  border: 2.5px solid #444;
+  outline: none;
+}
+.portfolio-btn:hover, .portfolio-btn:focus {
+  background: linear-gradient(90deg, #444 0%, #111 100%);
+  color: #fff;
+  transform: translateY(-4px) scale(1.045);
+  box-shadow: 0 10px 32px rgba(34,34,34,0.22);
+  border-color: #888;
+}
+
