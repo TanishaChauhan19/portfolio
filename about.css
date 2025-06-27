@@ -212,20 +212,22 @@ body{
 }
 @media (max-width: 600px) {
     .skills-container {
-        padding: 10px 0 18px 0;
+        padding: 10px 10px 18px 10px;
         border-radius: 12px;
+        margin-left: 8px;
+        margin-right: 8px;
     }
     .skills-cards {
-        gap: 8px 2px;
+        gap: 12px 2px;
+        padding-left: 4px;
+        padding-right: 4px;
     }
     .skill-card {
-        width: 98vw;
+        width: 92vw;
         min-width: 0;
-        max-width: 99vw;
-        min-height: 90px;
-        font-size: 0.80rem;
-        padding: 2px 2px;
-        margin: 0 auto 8px auto;
+        max-width: 96vw;
+        margin: 0 auto 12px auto;
+        padding: 8px 6px;
     }
     .skill-card .skill-label {
         font-size: 0.85rem;
@@ -263,6 +265,21 @@ body{
         white-space: normal;
         text-align: center;
         display: block;
+    }
+    .cta-portfolio {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 12vw;
+        padding-right: 12vw;
+    }
+    .portfolio-btn {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        font-size: 1.08rem;
+        padding: 15px 0;
+        border-radius: 24px;
+        box-sizing: border-box;
     }
 }
 @media (max-width: 400px) {
