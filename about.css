@@ -107,9 +107,9 @@ body{
     z-index: 2;
 }
 .skill-card {
-    background: #fff;
+    background: linear-gradient(135deg, #222 80%, #444 100%);
     border-radius: 20px;
-    box-shadow: 0 4px 24px rgba(80,80,160,0.10), 0 1.5px 8px rgba(80,80,160,0.08);
+    box-shadow: 0 4px 24px rgba(34,34,34,0.10), 0 1.5px 8px rgba(34,34,34,0.08);
     width: 190px;
     min-height: 220px;
     display: flex;
@@ -118,46 +118,35 @@ body{
     justify-content: flex-start;
     position: relative;
     cursor: pointer;
-    transition: transform 0.25s cubic-bezier(.25,1.7,.45,1.2), box-shadow 0.25s;
+    transition: transform 0.25s cubic-bezier(.25,1.7,.45,1.2), box-shadow 0.25s, border-color 0.25s;
     will-change: transform, box-shadow;
     perspective: 600px;
     opacity: 0;
     transform: translateY(40px) scale(0.95);
     animation: cardFadeIn 0.7s forwards;
-    border: 1.5px solid #e0e7ff;
+    border: 1.5px solid #444;
     margin-bottom: 0;
     word-break: break-word;
     overflow: hidden;
+    color: #f3f3f3;
 }
 .skill-card:hover, .skill-card.active {
     transform: scale(1.07) rotateY(4deg);
-    box-shadow: 0 8px 32px rgba(80,80,160,0.18), 0 2px 12px rgba(80,80,160,0.10);
+    box-shadow: 0 8px 32px rgba(34,34,34,0.18), 0 2px 12px rgba(34,34,34,0.10);
     z-index: 3;
-    border-color: #b3baff;
+    border-color: #888;
+    background: linear-gradient(135deg, #333 60%, #111 100%);
 }
 .skill-card .progress-ring {
     margin: 18px 0 10px 0;
 }
 .skill-card .skill-label, .skill-card .skill-level {
-    word-break: break-word;
-    text-align: center;
-    width: 100%;
+    color: #fafafa;
 }
 .skill-card .project-list {
-    display: none;
-    width: 100%;
-    margin: 0 auto 10px auto;
-    padding: 0 10px;
-    text-align: left;
-    font-size: 0.97rem;
-    color: #444;
-    list-style: disc inside;
-    border-radius: 10px;
-    background: #f6f8ff;
-    box-shadow: 0 2px 8px rgba(80,80,160,0.06);
-    animation: fadeInProject 0.3s;
-    word-break: break-word;
-    padding-bottom: 6px;
+    background: #222;
+    color: #e0e0e0;
+    box-shadow: 0 2px 8px rgba(34,34,34,0.12);
 }
 .skill-card:hover .project-list, .skill-card.active .project-list {
     display: block;
@@ -660,5 +649,20 @@ footer{
   background: linear-gradient(90deg, #7b8cff 60%, #b3baff 100%);
   text-decoration: underline;
   box-shadow: 0 2px 8px #b3baff44;
+}
+
+.skills-heading {
+  font-size: 2.7rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 36px;
+  margin-top: 0;
+  background: linear-gradient(90deg, #222 10%, #444 50%, #888 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  letter-spacing: 1.5px;
+  filter: drop-shadow(0 2px 8px #22222222);
 }
 
