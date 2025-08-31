@@ -58,7 +58,7 @@ const skillData = [
   },
   {
     label: "C/C++",
-    value: 70,
+    value: 70 ,
     color: "#b07219",
     projects: [],
     level: "Intermediate"
